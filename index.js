@@ -78,6 +78,10 @@ app.post('/api/langflow', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.send("Don't you dare to touch me.")
+})
+
 app.listen(PORT, () => {
     console.log(`Proxy server running on port ${PORT}`);
     console.log('Environment variables loaded:', {
